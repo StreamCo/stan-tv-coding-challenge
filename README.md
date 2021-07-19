@@ -10,8 +10,7 @@ This challenge is expected to take around 4 hours.
 
 ## Guidelines
 
-- Screenshots are provided in the `screenshots` folder.
-- Assets are provided in the `assets` folder.
+- You should use the provided Stan logo [logo.svg](./logo.svg).
 - The **deployable** solution should be built in a folder named **`dist`** with an entry point file of **`index.html`**.
 - Your solution should be built using [TypeScript](https://www.typescriptlang.org) and [React](https://facebook.github.io/react/)
 - You should avoid using any additional third party CSS frameworks or JS libraries.
@@ -22,21 +21,21 @@ This challenge is expected to take around 4 hours.
 
 You will need to build the following 2 pages with React:
 
-- A "Home" page [screenshots/1-home.jpg](./screenshots/1-home.jpg)
-- A "Program" page [screenshots/2-program.jpg](./screenshots/2-program.jpg)
+- A "Home" page [home.jpg](./home.jpg)
+- A "Program" page [program.jpg](./program.jpg)
 
 ### "Home" Page
 
 - This page should consist of the layout along with a **simple** carousel.
-- You will need to fetch the provided sample data in [data/sample.json](https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/data/sample.json)
-- Each item in the carousel should also link to a "Program" page.
-- Navigation between carousel items should be handled using the `left`, `right` and `enter` keyboard keys.
-- Any items in the carousel should only be rendered when they are visible.
-- When there are no items to display or an error occurs while fetching data the carousel should not render any items.
+- You will need to fetch the provided sample data in [data.json](./data.json)
+- Each item in the carousel should link to a "Program" page.
+- Navigation between items in the carousel should be handled using the `left`, `right` and `enter` keyboard keys.
+- No more than ten carousel items should be in the DOM at any time.
+- When there are no carousel items to display (or an error occurs) the carousel should not render anything.
 
 ### "Program" Page
 
-- This page should consist of the layout along with a basic program overview.
+- This page should consist of the layout along with a program overview.
 - The program to display should be determined by the ID.
 - You should only fetch the provided sample data if the "Home" page has not been visited first.
 - Pressing the `backspace` keyboard key should take you back to the "Home" page.
