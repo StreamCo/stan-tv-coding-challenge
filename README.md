@@ -4,34 +4,40 @@
 
 ## Overview
 
-The purpose of this challenge is to assess your knowledge around composing a **simple React/Typescript single-page application** following the guidelines and requirements.
+The purpose of this challenge is to assess your knowledge around composing a **simple React/Typescript single-page application** closely following the guidelines and requirements.
 
-This challenge is expected to take around 4 hours.
+This challenge is expected to take around 4-6 hours.
 
 ## Guidelines
 
-- You should use the provided Stan logo [logo.svg](./logo.svg).
-- The **deployable** solution should be built in a folder named **`dist`** with an entry point file of **`index.html`**.
-- Your solution should be built using [TypeScript](https://www.typescriptlang.org) and [React](https://facebook.github.io/react/)
-- You should avoid using any additional third party CSS frameworks or JS libraries.
-- The app should be responsive and support both 720p and 1080p screen sizes.
-- We are looking for solutions that are **simple, well-designed, performant, and tested**
+- The application should be built using [Babel](https://www.babeljs.io) along with [webpack](https://webpack.js.org) into a `dist` folder containing four files (`app.js`, `styles.css`, `logo.svg` and `index.html`).
+- Your solution should be implemented using:
+  - [TypeScript](https://www.typescriptlang.org)
+  - [React](https://facebook.github.io/react/)
+  - [Redux](https://redux.js.org) (optional)
+  - [Styled Components](https://www.styledcomponents.com) (optional)
+  - [React Router](https://www.reactrouter.com) (optional)
+- You should avoid using any other JS/CSS frameworks/libraries.
+- The application should be responsive and support both 720p and 1080p screen sizes.
+- All text should be rendered using the "Open Sans" font.
+- We are looking for solutions that are **simple, modern, performant, and tested**
 
 ## Requirements
 
 You will need to build the following 2 pages with React:
 
-- A "Home" page [home.jpg](./home.jpg)
-- A "Program" page [program.jpg](./program.jpg)
+- A "Home" page ([home.jpg](./home.jpg))
+- A "Program" page ([program.jpg](./program.jpg))
 
 ### "Home" Page
 
-- This page should consist of the layout along with a **simple** carousel.
-- You will need to fetch the provided sample data in [data.json](./data.json)
+- This page should consist of the layout along with a **simple and reusable** carousel.
+- The provided sample data ([data.json](./data.json)) should be retrieved using the fetch API.
 - Each item in the carousel should link to a "Program" page.
 - Navigation between items in the carousel should be handled using the `left`, `right` and `enter` keyboard keys.
-- No more than ten carousel items should be in the DOM at any time.
-- When there are no carousel items to display (or an error occurs) the carousel should not render anything.
+- No more than six carousel items should be in the DOM at any time.
+- When the UI is in a loading state render a skeleton. ([home-loading.jpg](./home-loading.jpg)).
+- When an error occurs an error message message should be rendered. ([error.jpg](./error.jpg))
 
 ### "Program" Page
 
@@ -39,6 +45,8 @@ You will need to build the following 2 pages with React:
 - The program to display should be determined by the ID.
 - You should only fetch the provided sample data if the "Home" page has not been visited first.
 - Pressing the `backspace` keyboard key should take you back to the "Home" page.
+- When the UI is in a loading state render a skeleton. ([program-loading.jpg](./program-loading.jpg)).
+- When an error occurs an error message message should be rendered. ([error.jpg](./error.jpg))
 
 ## Other Notes
 
