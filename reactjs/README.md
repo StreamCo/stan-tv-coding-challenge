@@ -6,7 +6,7 @@
 
 The purpose of this challenge is to assess your knowledge around composing a **simple React/Typescript single-page application** closely following the guidelines and requirements.
 
-This challenge is expected to take around 4-6 hours.
+This challenge is expected to take around 6-8 hours.
 
 ## Guidelines
 
@@ -65,7 +65,9 @@ Also, add the following info to your `README`:
 - Are there any improvements you could make to your submission?
 - What would you do differently if you were allocated more time?
 
-Please also send through any other code or projects that you're proud of and would like to share with us.
+Please also ensure your commit history is available upon submission.
+
+We are also interested in looking at any other code or projects that you're proud of and would like to share with us.
 
 Any feedback on the coding challenge once you're done is also appreciated!
 
